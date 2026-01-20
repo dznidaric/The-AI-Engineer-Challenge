@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-app = FastAPI()
+app = FastAPI(docs_url="/api/docs")
 
 # CORS so the frontend can talk to backend
 app.add_middleware(
